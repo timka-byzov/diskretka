@@ -53,13 +53,6 @@ void solve() {
 
     auto t = mPow(m, n, p);
 
-//    for (auto el1: t) {
-//        for (auto el2: el1) {
-//            cout << el2 << " ";
-//        }
-//        cout << endl;
-//    }
-
     cout << t[0][1] % p << endl;
 }
 
