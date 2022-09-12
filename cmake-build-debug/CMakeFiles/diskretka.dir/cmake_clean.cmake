@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/diskretka.dir/project1/task2.cpp.obj"
-  "CMakeFiles/diskretka.dir/project1/task2.cpp.obj.d"
+  "CMakeFiles/diskretka.dir/project1/task3.cpp.obj"
+  "CMakeFiles/diskretka.dir/project1/task3.cpp.obj.d"
   "diskretka.exe"
   "diskretka.exe.manifest"
   "diskretka.pdb"

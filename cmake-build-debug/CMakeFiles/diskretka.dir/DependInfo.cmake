@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/timofeus/Desktop/diskretka/project1/task2.cpp" "CMakeFiles/diskretka.dir/project1/task2.cpp.obj" "gcc" "CMakeFiles/diskretka.dir/project1/task2.cpp.obj.d"
+  "C:/Users/timofeus/Desktop/diskretka/project1/task3.cpp" "CMakeFiles/diskretka.dir/project1/task3.cpp.obj" "gcc" "CMakeFiles/diskretka.dir/project1/task3.cpp.obj.d"
   )
 
 # Targets to which this target links.

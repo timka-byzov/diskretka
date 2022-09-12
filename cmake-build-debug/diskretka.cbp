@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/timofeus/Desktop/diskretka/project1/task2.cpp">
+		<Unit filename="C:/Users/timofeus/Desktop/diskretka/project1/task3.cpp">
 			<Option target="diskretka"/>
 		</Unit>
 		<Unit filename="C:/Users/timofeus/Desktop/diskretka/CMakeLists.txt">

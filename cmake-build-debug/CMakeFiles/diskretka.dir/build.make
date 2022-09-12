@@ -68,28 +68,28 @@ include CMakeFiles/diskretka.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/diskretka.dir/flags.make
 
-CMakeFiles/diskretka.dir/project1/task2.cpp.obj: CMakeFiles/diskretka.dir/flags.make
-CMakeFiles/diskretka.dir/project1/task2.cpp.obj: ../project1/task2.cpp
-CMakeFiles/diskretka.dir/project1/task2.cpp.obj: CMakeFiles/diskretka.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\timofeus\Desktop\diskretka\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/diskretka.dir/project1/task2.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/diskretka.dir/project1/task2.cpp.obj -MF CMakeFiles\diskretka.dir\project1\task2.cpp.obj.d -o CMakeFiles\diskretka.dir\project1\task2.cpp.obj -c C:\Users\timofeus\Desktop\diskretka\project1\task2.cpp
+CMakeFiles/diskretka.dir/project1/task3.cpp.obj: CMakeFiles/diskretka.dir/flags.make
+CMakeFiles/diskretka.dir/project1/task3.cpp.obj: ../project1/task3.cpp
+CMakeFiles/diskretka.dir/project1/task3.cpp.obj: CMakeFiles/diskretka.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\timofeus\Desktop\diskretka\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/diskretka.dir/project1/task3.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/diskretka.dir/project1/task3.cpp.obj -MF CMakeFiles\diskretka.dir\project1\task3.cpp.obj.d -o CMakeFiles\diskretka.dir\project1\task3.cpp.obj -c C:\Users\timofeus\Desktop\diskretka\project1\task3.cpp
 
-CMakeFiles/diskretka.dir/project1/task2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/diskretka.dir/project1/task2.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\timofeus\Desktop\diskretka\project1\task2.cpp > CMakeFiles\diskretka.dir\project1\task2.cpp.i
+CMakeFiles/diskretka.dir/project1/task3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/diskretka.dir/project1/task3.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\timofeus\Desktop\diskretka\project1\task3.cpp > CMakeFiles\diskretka.dir\project1\task3.cpp.i
 
-CMakeFiles/diskretka.dir/project1/task2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/diskretka.dir/project1/task2.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\timofeus\Desktop\diskretka\project1\task2.cpp -o CMakeFiles\diskretka.dir\project1\task2.cpp.s
+CMakeFiles/diskretka.dir/project1/task3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/diskretka.dir/project1/task3.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\timofeus\Desktop\diskretka\project1\task3.cpp -o CMakeFiles\diskretka.dir\project1\task3.cpp.s
 
 # Object files for target diskretka
 diskretka_OBJECTS = \
-"CMakeFiles/diskretka.dir/project1/task2.cpp.obj"
+"CMakeFiles/diskretka.dir/project1/task3.cpp.obj"
 
 # External object files for target diskretka
 diskretka_EXTERNAL_OBJECTS =
 
-diskretka.exe: CMakeFiles/diskretka.dir/project1/task2.cpp.obj
+diskretka.exe: CMakeFiles/diskretka.dir/project1/task3.cpp.obj
 diskretka.exe: CMakeFiles/diskretka.dir/build.make
 diskretka.exe: CMakeFiles/diskretka.dir/linklibs.rsp
 diskretka.exe: CMakeFiles/diskretka.dir/objects1.rsp

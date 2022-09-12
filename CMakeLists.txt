@@ -3,4 +3,4 @@ project(diskretka)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(diskretka project1/task2.cpp)
+add_executable(diskretka project1/task3.cpp)

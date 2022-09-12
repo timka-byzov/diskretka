@@ -128,29 +128,29 @@ diskretka/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/build
 .PHONY : diskretka/fast
 
-project1/task2.obj: project1/task2.cpp.obj
-.PHONY : project1/task2.obj
+project1/task3.obj: project1/task3.cpp.obj
+.PHONY : project1/task3.obj
 
 # target to build an object file
-project1/task2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task2.cpp.obj
-.PHONY : project1/task2.cpp.obj
+project1/task3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task3.cpp.obj
+.PHONY : project1/task3.cpp.obj
 
-project1/task2.i: project1/task2.cpp.i
-.PHONY : project1/task2.i
+project1/task3.i: project1/task3.cpp.i
+.PHONY : project1/task3.i
 
 # target to preprocess a source file
-project1/task2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task2.cpp.i
-.PHONY : project1/task2.cpp.i
+project1/task3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task3.cpp.i
+.PHONY : project1/task3.cpp.i
 
-project1/task2.s: project1/task2.cpp.s
-.PHONY : project1/task2.s
+project1/task3.s: project1/task3.cpp.s
+.PHONY : project1/task3.s
 
 # target to generate assembly for a file
-project1/task2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task2.cpp.s
-.PHONY : project1/task2.cpp.s
+project1/task3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\diskretka.dir\build.make CMakeFiles/diskretka.dir/project1/task3.cpp.s
+.PHONY : project1/task3.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... diskretka
-	@echo ... project1/task2.obj
-	@echo ... project1/task2.i
-	@echo ... project1/task2.s
+	@echo ... project1/task3.obj
+	@echo ... project1/task3.i
+	@echo ... project1/task3.s
 .PHONY : help
 
 
