@@ -9,54 +9,63 @@
 #define endl "\n"
 using namespace std;
 
-vector<vecll> mPow(vector<vecll>& m, ll pow, ll p){
-    int n = (int)m.size();
-    int k = (int)m[0].size();
-    pow--;
 
-    vector<vecll> result = m;
+map<ll, vector<vecll>> pow_cache;
 
-    while(pow--){
-        vector<vecll> temp_result = vector<vecll>(n, vecll(n, 0));
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j < n; j++){
-                for (int l = 0; l < k; l++){
-                    temp_result[i][j] += (result[i][l] * m[l][j]) % p;
-                    temp_result[i][j] %= p;
-                }
+
+vector<vecll > mMult(vector<vecll>& a, vector<vecll>& b, ll p) {
+    vector<vecll > temp_result = vector<vecll >(2, vecll(2, 0));
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            for (int l = 0; l < 2; l++) {
+                temp_result[i][j] += (a[i][l] * b[l][j]) % p;
+                temp_result[i][j] %= p;
             }
         }
-        result = temp_result;
     }
-
-    return result;
+    return temp_result;
 
 }
 
-void solve(int n, int p){
-    //ll n, p; cin >> n >> p;
+vector<vecll>& mPow(vector<vecll > &m, ll pow, ll p) {
+    if (pow == 1) {
+        pow_cache[1] = m;
+        return m;
+    }
 
-    vector<vecll> m(2, vecll(2, 0));
+    else{
+        if (pow_cache.find(pow) == pow_cache.end()){
+            pow_cache[pow] = mMult(mPow(m, pow / 2, p), mPow(m, pow / 2 + pow % 2, p), p);
+        }
+        return pow_cache[pow];
+    }
+}
+
+
+void solve() {
+    ll n, p;
+    cin >> n >> p;
+
+    vector<vecll > m(2, vecll(2, 0));
     m[0][1] = 1;
     m[1][0] = 1;
     m[1][1] = 1;
 
     auto t = mPow(m, n, p);
 
-//    for (auto el1: t){
-//        for (auto el2: el1){
+//    for (auto el1: t) {
+//        for (auto el2: el1) {
 //            cout << el2 << " ";
-//        } cout << endl;
+//        }
+//        cout << endl;
 //    }
 
-    cout << t[0][1] << endl;
+    cout << t[0][1] % p << endl;
 }
 
 int main() {
-
-    for (int n = 1; n <= 1000; n++){
-        solve(n, 1000);
-    }
+    solve();
+    return 0;
 
 }
 
