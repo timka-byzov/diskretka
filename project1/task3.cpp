@@ -39,7 +39,7 @@ vector<vecll > &mPow(vector<vecll > &m, ll pow, int k) {
     }
 }
 
-ld summ_g(vector<vecll> &g, int k) {
+ld summ_g(vector<vecll > &g, int k) {
     ld summ = 0;
     for (int i = 0; i < k; i++) {
         for (int j = 0; j < k; j++) {
@@ -61,21 +61,32 @@ void solve() {
         }
     }
 
+    if (k == 1 && g[0][0] == 0) {
+        cout << 0;
+        return;
+    }
+
+
     ll pow = 2;
-    ld delta = 1e-2;
     ld prev_val = summ_g(g, k);
     ld curr_val = summ_g(mPow(g, pow, k), k);
     ld prev_lim = curr_val / prev_val;
+
+    ld e = 1e-2;
+
 
     while (pow < 100) {
         pow++;
         prev_val = curr_val;
         curr_val = summ_g(mPow(g, pow, k), k);
-        ld curr_lim = curr_val / prev_val;
+        ld lim = curr_val / prev_val;
+
+        if (abs(lim - prev_lim) < e) {
+            cout << fixed << setprecision(2) << lim;
+            break;
+        }
+        prev_lim = lim;
     }
-
-    cout << fixed << setprecision(2) << prev_lim;
-
 }
 
 int main() {
