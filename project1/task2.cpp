@@ -10,10 +10,10 @@
 using namespace std;
 
 
-map<int, vector<vecll>> pow_cache;
+map<ll, vector<vecll>> pow_cache;
 
 
-vector<vecll > mMult(vector<vecll > &a, vector<vecll > &b, ll p) {
+vector<vecll > mMult(vector<vecll>& a, vector<vecll>& b, ll p) {
     vector<vecll > temp_result = vector<vecll >(2, vecll(2, 0));
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
@@ -27,18 +27,18 @@ vector<vecll > mMult(vector<vecll > &a, vector<vecll > &b, ll p) {
 
 }
 
-vector<vecll > mPow(vector<vecll > &m, ll pow, ll p) {
+vector<vecll>& mPow(vector<vecll > &m, ll pow, ll p) {
     if (pow == 1) {
+        pow_cache[1] = m;
         return m;
     }
-    if (pow % 2 == 0) {
-        auto t = mPow(m, pow / 2, p);
-        return mMult(t, t, p);
-    } else {
-        auto t = mPow(m, pow - 1, p);
-        return mMult(t, m, p);
-    }
 
+    else{
+        if (pow_cache.find(pow) == pow_cache.end()){
+            pow_cache[pow] = mMult(mPow(m, pow / 2, p), mPow(m, pow / 2 + pow % 2, p), p);
+        }
+        return pow_cache[pow];
+    }
 }
 
 
